@@ -1,0 +1,4 @@
+terraform-repo
+node_modules
+.terragrunt-cache
+.terraform.lock.hcl
