@@ -1,0 +1,7 @@
+resources:
+  bucket:
+    name: "newbandabucket"
+    location: "us-central1"
+  db:
+    instance_name: "bandainstance"
+    db_name: "bandadb"

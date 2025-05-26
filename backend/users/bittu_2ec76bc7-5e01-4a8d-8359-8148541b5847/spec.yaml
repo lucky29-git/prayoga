@@ -1,2 +1,7 @@
-bucket_name: "bittuuuuuu-bucket"
-bucket_location: "us-central1"
+resources:
+  bucket:
+    name: "bittubanderbucket"
+    location: "us-central1"
+  db:
+    instance_name: "bittuinstance"
+    db_name: "bittudb"

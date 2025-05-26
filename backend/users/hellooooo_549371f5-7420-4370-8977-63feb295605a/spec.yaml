@@ -1,0 +1,4 @@
+resources:
+  bucket:
+    name: "helloooobucket"
+    location: "us-central1"

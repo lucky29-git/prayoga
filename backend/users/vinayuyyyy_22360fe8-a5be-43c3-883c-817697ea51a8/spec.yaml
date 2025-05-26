@@ -1,0 +1,4 @@
+resources:
+  bucket:
+    name: "dfhhsefssadfasdf"
+    location: "us-central1"

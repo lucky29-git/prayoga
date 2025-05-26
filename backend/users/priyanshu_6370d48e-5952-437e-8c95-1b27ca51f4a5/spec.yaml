@@ -1,0 +1,7 @@
+resources:
+  bucket:
+    name: "peiiiibudk"
+    location: "us-central1"
+  db:
+    instance_name: "asdfasdfsdaf"
+    db_name: "asdfsadfsadffff"

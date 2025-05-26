@@ -1,0 +1,4 @@
+resources:
+  bucket:
+    name: "bittubuckethai"
+    location: "us-central1"

@@ -4,6 +4,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import SpecExamplePage from "./pages/SpecExample";
+import Resources from "./pages/Resources";
 import { Button } from "./components/ui/button";
 import { useEffect, useState } from "react";
 
@@ -24,13 +25,18 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex gap-4 p-4 border-b mb-4">
-      <Link to="/"><Button variant="link">Home</Button></Link>
-      <Link to="/register"><Button variant="link">Register</Button></Link>
-      <Link to="/login"><Button variant="link">Login</Button></Link>
-      <Link to="/dashboard"><Button variant="link">Dashboard</Button></Link>
-      <Link to="/spec-example"><Button variant="link">Spec Example</Button></Link>
-      {loggedIn && <Button variant="destructive" onClick={handleLogout}>Logout</Button>}
+    <nav className="flex justify-between items-center p-4 border-b mb-4">
+      <div className="flex gap-4 items-center">
+        <Link to="/"><Button variant="link">Home</Button></Link>
+        <Link to="/dashboard"><Button variant="link">Dashboard</Button></Link>
+        <Link to="/spec-example"><Button variant="link">Spec Example</Button></Link>
+        <Link to="/resources"><Button variant="link">Resources</Button></Link>
+      </div>
+      <div className="flex gap-4 items-center">
+        <Link to="/register"><Button variant="link">Register</Button></Link>
+        <Link to="/login"><Button variant="link">Login</Button></Link>
+        {loggedIn && <Button variant="destructive" onClick={handleLogout}>Logout</Button>}
+      </div>
     </nav>
   );
 }
@@ -61,6 +67,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/spec-example" element={<SpecExamplePage />} />
+          <Route path="/resources" element={<Resources />} />
         </Routes>
       </div>
     </Router>

@@ -18,6 +18,7 @@ export default function RegisterForm() {
       const res = await api.post("/users/register", { name });
       setUuid(res.data.uuid);
       localStorage.setItem("uuid", res.data.uuid);
+      localStorage.setItem("username", res.data.username);
       setTimeout(() => navigate("/dashboard"), 500); // short delay to show uuid
     } catch (err: any) {
       setError("Registration failed");

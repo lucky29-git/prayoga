@@ -17,6 +17,7 @@ export default function LoginForm() {
       const res = await api.post("/users/login", { uuid });
       if (res.data.success) {
         localStorage.setItem("uuid", uuid);
+        localStorage.setItem("username", res.data.username);
         navigate("/dashboard");
       } else {
         setError("Login failed");
